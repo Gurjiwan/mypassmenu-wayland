@@ -9,15 +9,15 @@ passmenu [--type] [dmenu arguments...]
 # Dependencies
 
 passmenu requires one of the following packages to function:
-1. dmenu (simple menu for Xorg)
-2. dmenu-wl (wayland port of dmenu)
-3. wmenu (wayland alternative to dmenu)
+1. [dmenu][] (simple menu for Xorg)
+2. [dmenu-wl][] (wayland port of dmenu)
+3. [wmenu][] (wayland alternative to dmenu)
 
 In addition for using the `--type` function :
-1. xdotool (xorg)
-2. ydotool (xorg + wayland)
+1. [xdotool][] (xorg)
+2. [ydotool][] (xorg + wayland)
 
-is required if we want the passwords to be auto-typed into a text box instead of copying.
+are required if we want the passwords to be auto-typed into a text box instead of copying.
 
 # Background
 
