@@ -1,13 +1,13 @@
 # mypassmenu-wayland
-======================
+
 A simple extension of `passmenu` script which is part of [pass][] password-store package to add support for wmenu in addition to dmenu-wl on wayland.
 
 # Usage
-======================
+
 passmenu [--type] [dmenu arguments...]
 
 # Dependencies
-======================
+
 passmenu requires one of the following packages to function:
 1. dmenu (simple menu for Xorg)
 2. dmenu-wl (wayland port of dmenu)
@@ -20,7 +20,7 @@ In addition for using the `--type` function :
 is required if we want the passwords to be auto-typed into a text box instead of copying.
 
 # Background
-=======================
+
 passmenu is a [dmenu][]-based interface to [pass][], the standard Unix
 password manager. This design allows you to quickly copy a password to the
 clipboard without having to open up a terminal window if you don't already have
