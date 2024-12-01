@@ -4,7 +4,7 @@ A simple extension of `passmenu` script which is part of [pass][] password-store
 
 # Usage
 
-passmenu [--type] [dmenu arguments...]
+`passmenu [--type] [dmenu arguments...]`
 
 # Dependencies
 
