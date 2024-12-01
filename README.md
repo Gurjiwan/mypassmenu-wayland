@@ -2,22 +2,30 @@
 
 A simple extension of `passmenu` script which is part of [pass][] password-store package to add support for wmenu in addition to dmenu-wl on wayland.
 
+Support added for pass plugin pass-otp. we can invoke pass-otp using `passmenu --otp` and type it using `passmenu --otp --type` commands.
+
 # Usage
 
-`passmenu [--type] [dmenu arguments...]`
+`passmenu [--otp] [--type] [dmenu/wmenu arguments...]`
+`passmenu [--type] [dmenu/wmenu arguments...]`
+`passmenu [--otp] [dmenu/wmenu arguments...]`
+
+Note:
+We cannot use `--type` option before `--otp` . As of now only the above examples are valid.
 
 # Dependencies
 
-passmenu requires one of the following packages to function:
+`passmenu` requires one of the following packages to function:
 1. [dmenu][] (simple menu for Xorg)
 2. [dmenu-wl][] (wayland port of dmenu)
 3. [wmenu][] (wayland alternative to dmenu)
 
-In addition for using the `--type` function :
+In addition for using the `--type` (auto-type) option we require one of :
 1. [xdotool][] (xorg)
 2. [ydotool][] (xorg + wayland)
 
-are required if we want the passwords to be auto-typed into a text box instead of copying.
+Similarly, `--otp` option require optional dependency :
+1. [pass-otp][] (extension of pass to generate otp using totp secrets)
 
 # Background
 
@@ -32,6 +40,7 @@ Note that the latter requires access to the [uinput][] device, so you'll probabl
 need to add an extra udev rule or similar to give certain non-root users permission.
 
 In addition to [dmenu-wl], by using this version of script we can use [wmenu][] in wayland.
+Further added support for [pass-otp][] extension.
 
 Original passmenu script can be found under /contrib/dmenu in the original [pass-repo][] repository.
 

@@ -3,6 +3,13 @@
 shopt -s nullglob globstar
 
 typeit=0
+passcmd=show
+
+if [[ $1 == "--otp" ]]; then
+	passcmd=otp
+	shift
+fi
+
 if [[ $1 == "--type" ]]; then
 	typeit=1
 	shift
@@ -33,7 +40,7 @@ password=$(printf '%s\n' "${password_files[@]}" | "$dmenu" "$@")
 [[ -n $password ]] || exit
 
 if [[ $typeit -eq 0 ]]; then
-	pass show -c "$password" 2>/dev/null
+	pass $passcmd -c "$password" 2>/dev/null
 else
-	pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } | $xdotool
+	pass $passcmd "$password" | { IFS= read -r pass; printf %s "$pass"; } | $xdotool
 fi
