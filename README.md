@@ -33,7 +33,7 @@ need to add an extra udev rule or similar to give certain non-root users permiss
 
 In addition to [dmenu-wl], by using this version of script we can use [wmenu][] in wayland.
 
-Original passmenu script can be found under /contrib/dmenu in the original [pass][] repository.
+Original passmenu script can be found under /contrib/dmenu in the original [pass-repo][] repository.
 
 [dmenu]: http://tools.suckless.org/dmenu/
 [xdotool]: http://www.semicomplete.com/projects/xdotool/
@@ -42,3 +42,4 @@ Original passmenu script can be found under /contrib/dmenu in the original [pass
 [ydotool]: https://github.com/ReimuNotMoe/ydotool
 [uinput]: https://www.kernel.org/doc/html/v4.12/input/uinput.html
 [wmenu]: https://codeberg.org/adnano/wmenu
+[pass-repo]: https://git.zx2c4.com/password-store/tree/
